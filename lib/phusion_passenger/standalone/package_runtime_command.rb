@@ -64,6 +64,7 @@ class PackageRuntimeCommand < Command
 		installer = RuntimeInstaller.new(
 			:targets     => [:nginx, :ruby, :support_binaries],
 			:support_dir => support_dir,
+			:lib_dir     => support_dir,
 			:ruby_dir    => ruby_dir,
 			:nginx_dir   => nginx_dir,
 			:nginx_version     => @options[:nginx_version],
